@@ -1,0 +1,14 @@
+name: 4k_randread
+version: 1
+description: 4KB random read IOPS measurement at moderate queue depth
+workload:
+  pattern: randread
+  block_size: 4k
+  io_depth: 32
+  num_jobs: 4
+runtime:
+  duration_sec: 60
+  ramp_sec: 10
+engine:
+  name: io_uring
+  direct: true

@@ -1,0 +1,14 @@
+name: seq_read_128k
+version: 1
+description: 128KB sequential read bandwidth measurement
+workload:
+  pattern: read
+  block_size: 128k
+  io_depth: 16
+  num_jobs: 1
+runtime:
+  duration_sec: 60
+  ramp_sec: 5
+engine:
+  name: io_uring
+  direct: true

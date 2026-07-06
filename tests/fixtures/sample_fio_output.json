@@ -1,0 +1,52 @@
+{
+    "fio version": "fio-3.36",
+    "timestamp": 1720000000,
+    "timestamp_ms": 1720000000000,
+    "time": "Sun Jul  7 14:30:00 2024",
+    "jobs": [
+        {
+            "jobname": "4k_randread",
+            "groupid": 0,
+            "error": 0,
+            "job_runtime": 60000,
+            "read": {
+                "io_bytes": 12345678900,
+                "io_kbytes": 12056324,
+                "bw_bytes": 205761315,
+                "bw": 200938,
+                "iops": 50234.5,
+                "runtime": 60000,
+                "total_ios": 3014070,
+                "clat_ns": {
+                    "min": 12000,
+                    "max": 5000000,
+                    "mean": 45000.5,
+                    "stddev": 12000.3,
+                    "percentile": {
+                        "50.000000": 42000,
+                        "90.000000": 60000,
+                        "99.000000": 120000,
+                        "99.900000": 350000,
+                        "99.990000": 800000
+                    }
+                }
+            },
+            "write": {
+                "io_bytes": 0,
+                "io_kbytes": 0,
+                "bw_bytes": 0,
+                "bw": 0,
+                "iops": 0.0,
+                "runtime": 0,
+                "total_ios": 0,
+                "clat_ns": {
+                    "min": 0,
+                    "max": 0,
+                    "mean": 0.0,
+                    "stddev": 0.0,
+                    "percentile": {}
+                }
+            }
+        }
+    ]
+}

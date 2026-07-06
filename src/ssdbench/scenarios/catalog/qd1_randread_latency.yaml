@@ -1,0 +1,14 @@
+name: qd1_randread_latency
+version: 1
+description: Single I/O random read latency measurement, useful for baseline device response
+workload:
+  pattern: randread
+  block_size: 4k
+  io_depth: 1
+  num_jobs: 1
+runtime:
+  duration_sec: 30
+  ramp_sec: 5
+engine:
+  name: psync
+  direct: true
